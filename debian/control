@@ -2,7 +2,9 @@ Source: regolith-compix
 Section: x11
 Priority: optional
 Maintainer: Ken Gilmer <kgilmer@gmail.com>
-Build-Depends: debhelper (>= 10)
+Build-Depends: 
+    debhelper (>= 10),
+    bash-completion
 Standards-Version: 4.1.2
 Homepage: https://github.com/regolith-linux/regolith-desktop
 Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
