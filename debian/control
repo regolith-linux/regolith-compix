@@ -1,0 +1,22 @@
+Source: regolith-compix
+Section: x11
+Priority: optional
+Maintainer: Ken Gilmer <kgilmer@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://github.com/regolith-linux/regolith-desktop
+Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
+
+Package: regolith-compix
+Architecture: any
+Depends:
+    ${misc:Depends},
+    libconfuse-dev,
+    libxdg-basedir1,
+    xorg
+Provides: regolith-compositor
+Conflicts: regolith-compositor
+Replaces: regolith-compositor
+Multi-Arch: foreign
+Description: Regolith package for compix
+ Compix is a compositor thats based on axcomp which is based on xcompmgr.

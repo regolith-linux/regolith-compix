@@ -26,12 +26,6 @@ run: all
 debug: CFLAGS+=-g -D DEBUG
 debug: clean all
 
-run_in_xephyr: all run_xephyr.sh
-	sh ./run_xephyr.sh :1 1
-
-run_xephyr: run_xephyr.sh
-	sh ./run_xephyr.sh :1
-
 check: $(SDIR)/*.c
 	cppcheck --enable=all --suppress=missingIncludeSystem $(SDIR)
 
