@@ -1,2 +1,0 @@
-ghex &
-exec awesome
